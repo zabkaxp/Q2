@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class Numbers { 
+	public static void main(String [] args) throws java.util.InputMismatchException {
+	
+		for(;;) {
+		try {
+		System.out.println("Type a number bigger than 1");
+		Scanner skaner = new Scanner(System.in);
+		int x=skaner.nextInt();
+		
+		if(x%2==0&&x!=0) {
+			System.out.println("Even number");
+		}
+		else if (x%2!=0) {
+			System.out.println("Odd number");
+			}
+		else if(x<1) {
+			System.out.println("Hey, this does not count!");
+			}}
+		catch(Exception e) {
+			System.out.println("Do not cheat, only numbers please.");
+		}
+		}
+	}
+}
