@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
+class Help { 
+public static void main(String [] args){
+	System.out.println("Give us two numbers please.");
+		Scanner skaner= new Scanner(System.in);
+		int number1 = skaner.nextInt();
+		int number2 = skaner.nextInt();
+		System.out.println("Your first number is "+number1+" \nand second is "+number2);
+				
+		String word="ABRACADABRA";
+		char letter=word.charAt(0);
+		int b;
+		try {
+				for(b=0; b<word.length(); ) {
+				System.out.println((char)letter);
+				if ((int)b==((word.length()-1))) break;
+				Thread.sleep(1000);
+				letter=word.charAt(b+1);
+				b++;
+			}}
+		catch(InterruptedException e) {};
+		int var =number1;
+		number1=number2;
+		number2=var;
+		System.out.println("\nAfter the magic trick your first number is "+number1+"\nand second is "+number2+".");
+
+}}
