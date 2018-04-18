@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+class Help { 
+public static void main(String [] args){
+	System.out.println("Give us a number please, the program will count its factorial for you!");
+	Scanner skaner= new Scanner(System.in);
+	int number=skaner.nextInt();
+	int count=1;
+	int a;
+	for(a=1;a<=number;a++) {
+		count*=a;
+		}
+System.out.println("The factorial from "+number+" is "+count);
+}}
